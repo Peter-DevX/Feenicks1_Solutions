@@ -1,0 +1,14 @@
+/* Add to your main CSS file (e.g. src/index.css). The @import url must come first. */
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Newsreader", Georgia, serif;
+  --font-sans: "Hanken Grotesk", system-ui, sans-serif;
+  --color-ink: #09090a;    /* page background */
+  --color-panel: #121214;  /* the sliding panel */
+  --color-brass: #c9a45c;  /* single restrained accent */
+  --color-mist: #a3a3ab;   /* secondary text, ~7:1 contrast on panel */
+}
+
+body { @apply bg-ink font-sans antialiased; }
