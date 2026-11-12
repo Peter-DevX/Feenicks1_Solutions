@@ -87,7 +87,7 @@ const Benefits = ({ videoSrc, videoPoster, features = DEFAULT_FEATURES }) => {
         />
       )}
       {/* Blue tint keeps text readable over any footage */}
-      <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-b from-slate-950/85 via-blue-950/70 to-slate-950/90" />
+      <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-b from-white-850/80 via-blue-950/70 to-slate-950/90" />
       <div aria-hidden="true" className="absolute inset-0 -z-10" style={{ background: "radial-gradient(60% 50% at 50% 0%, rgba(29,78,216,0.35), transparent 70%)" }} />
 
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">

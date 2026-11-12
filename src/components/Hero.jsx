@@ -4,7 +4,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Portfolio from "./Portfolio";
 import Contactsection from "../components/Contactsection";
 import Benefits from "./Benefits";
-import benefitsVideo from "../assets/feenicks1.mp4";
+import benefitsVideo from "../assets/feenickx.mp4";
+import Footer from "./Footer";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -144,7 +146,7 @@ export default function Hero() {
   return (
     <main
       ref={root}
-      className="min-h-screen overflow-hidden bg-white text-[#101f3d]"
+      className="min-h-screen overflow-hidden bg-slate-200 text-[#101f3d]"
     >
       {/* Navigation */}
       <header className="relative z-20 mx-auto flex max-w-[1440px] items-center justify-between gap-5 px-5 py-5 sm:px-8 lg:px-12">
@@ -196,7 +198,7 @@ export default function Hero() {
         className="relative mx-auto grid max-w-[1440px] items-center gap-10 px-5 pb-14 pt-8 sm:px-8 lg:min-h-[530px] lg:grid-cols-2 lg:px-12 lg:pb-16 lg:pt-10"
       >
         <div className="relative z-10" data-reveal>
-          <span className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-4 py-2 text-[11px] font-bold uppercase tracking-wider text-blue-700">
+          <span className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-4 py-2 text-xs font-bold uppercase tracking-wider text-blue-700">
             Smart investments <span>•</span> Real growth
           </span>
 
@@ -283,33 +285,39 @@ export default function Hero() {
        
 
       {/* Footer */}
-      <footer className="bg-[#08152a] px-5 py-8 text-white sm:px-8 lg:px-12">
+      {/* <footer className="bg-white px-5 py-8 text-black sm:px-8 lg:px-12">
         <div className="mx-auto flex max-w-[1360px] flex-col justify-between gap-6 sm:flex-row sm:items-center">
           <a href="#home" className="flex items-center gap-3">
-            <span className="grid size-10 place-items-center rounded-xl bg-white text-lg font-black text-[#101f3d]">
+            <span className="grid size-10 place-items-center rounded-xl bg-white text-lg font-black text-black">
               F1
             </span>
             <span>
               <span className="block font-bold">F1 CAPITAL</span>
-              <span className="text-xs text-slate-400">Feenicks1 Solutions Ltd</span>
+              <span className="text-xs text-black">Feenicks1 Solutions Ltd</span>
             </span>
           </a>
 
-          <nav className="flex flex-wrap gap-5 text-sm text-slate-300">
-            <a href="#home" className="hover:text-white">Home</a>
-            <a href="#portfolio" className="hover:text-white">Portfolio</a>
-            <a href="#why-us" className="hover:text-white">Why Us</a>
-            <a href="#contact" className="hover:text-white">Contact</a>
+          <nav className="flex flex-wrap gap-5 text-sm text-black-300">
+            <a href="#home" className="hover:text-black">Home</a>
+            <a href="#portfolio" className="hover:text-black">Portfolio</a>
+            <a href="#why-us" className="hover:text-black">Why Us</a>
+            <a href="#contact" className="hover:text-black">Contact</a>
           </nav>
         </div>
 
-        <div className="mx-auto mt-7 max-w-[1360px] border-t border-white/10 pt-5 text-xs leading-6 text-slate-400">
+        <div className="mx-auto mt-7 max-w-[1360px] border-t border-white/10 pt-5 text-[16px] leading-6 text-black">
           Investments are subject to market risk. Returns are not guaranteed.
           Past performance does not indicate future results. Review all
           portfolio terms and related documents carefully before investing.
           <p className="mt-2">© {new Date().getFullYear()} F1 Capital. All rights reserved.</p>
         </div>
-      </footer>
+      </footer> */}
+
+ <Footer />
+
+
+
+
     </main>
   );
 }
