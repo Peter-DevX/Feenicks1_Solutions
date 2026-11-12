@@ -83,7 +83,7 @@ const Benefits = ({ videoSrc, videoPoster, features = DEFAULT_FEATURES }) => {
           ref={videoRef} src={videoSrc} poster={videoPoster}
           muted loop playsInline preload="metadata" disablePictureInPicture
           aria-hidden="true" tabIndex={-1}
-          className="absolute inset-0 -z-20 h-full w-full object-contain"
+          className="absolute inset-0 -z-20 h-full w-full object-cover"
         />
       )}
       {/* Blue tint keeps text readable over any footage */}
